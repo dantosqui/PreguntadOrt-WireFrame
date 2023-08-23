@@ -10,8 +10,19 @@
 </head>
 
 <body>
+    <nav class="navexterno">
+        <ul>
+          <li><a href="Index.html">Index</a></li>
+          <li><a href="ConfigurarJuego.html">ConfigurarJuego</a></li>
+          <li><a href="Juego.html">Juego</a></li>
+          <li><a href="RespuestaCorrecta.html">RespuestaCorrecta</a></li>
+          <li><a href="RespuestaIncorrecta.html">RespuestaIncorrecta</a></li>
+          <li><a href="Fin.html">Fin</a></li>
+          <li><a href="HighScores.html">HighScores</a></li>
+        </ul>
+      </nav>
     <header style="display: flex; flex-direction: row; margin: 0; align-items:stretch; justify-content: space-between;">
-        <img src="~/img/logo.png" style="left: 0; width: 6%; margin: 0; margin-left: 1%; min-height: 50px;">
+        <img src="img/logo.png" style="left: 0; width: 6%; margin: 0; margin-left: 1%; min-height: 50px;">
 
         <nav style="width: 80%;text-align: center; padding: 0;">
             <div style="border-bottom: 8px solid rgb(41, 197, 93); padding-bottom:20px">
@@ -38,7 +49,7 @@
 
 
 <div class="centrar">
-    <a href='@Url.Action("Jugar")' id="boton" class="btnw">
+    <a href='Juego.html' id="boton" class="btnw">
         <button type="button" class="btn btn-outline-success btnw">Siguiente pregunta</button>
     </a>
 </div>
@@ -47,8 +58,8 @@
 <div id="info" style="position:absolute;top:0;margin-top:9vw">
     <div class="card" style="width: 18rem;">
   <ul class="list-group list-group-flush">
-    <li class="list-group-item">@ViewBag.Puntaje Puntos</li>
-    <li class="list-group-item">@ViewBag.Username</li>
+    <li class="list-group-item">55 Puntos</li>
+    <li class="list-group-item">danosqui20programacion</li>
   </ul>
 </div>
 

@@ -127,3 +127,14 @@ a{
 #incorrecto h1{
   color:rgb(117, 34, 24);
 }
+
+.navexterno ul{
+  width: 100%;
+  position: fixed;
+  top:0;
+  left: 0;
+  display:flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
