@@ -1,108 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index - Preguntadort</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-        <link rel="stylesheet" href="site.css" asp-append-version="true" />
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="site.css" asp-append-version="true" />
+  </head>
 
-<body>
-  <nav class="navexterno">
-    <ul>
-      <li><a href="Index.html">Index</a></li>
-      <li><a href="ConfigurarJuego.html">ConfigurarJuego</a></li>
-      <li><a href="Juego.html">Juego</a></li>
-      <li><a href="RespuestaCorrecta.html">RespuestaCorrecta</a></li>
-      <li><a href="RespuestaIncorrecta.html">RespuestaIncorrecta</a></li>
-      <li><a href="Fin.html">Fin</a></li>
-      <li><a href="HighScores.html">HighScores</a></li>
-    </ul>
-  </nav>
-    <header style="display: flex; flex-direction: row; margin: 0; align-items:stretch; justify-content: space-between;">  
-      
-      <img src="img/logo.png" style="left: 0; width: 6%; margin: 0; margin-left: 1%; min-height: 50px;">
+  <body>
+    <nav class="navexterno">
+      <ul>
+        <li><a href="Index.html">Index</a></li>
+        <li><a href="ConfigurarJuego.html">ConfigurarJuego</a></li>
+        <li><a href="Juego.html">Juego</a></li>
+        <li><a href="RespuestaCorrecta.html">RespuestaCorrecta</a></li>
+        <li><a href="RespuestaIncorrecta.html">RespuestaIncorrecta</a></li>
+        <li><a href="Fin.html">Fin</a></li>
+        <li><a href="HighScores.html">HighScores</a></li>
+      </ul>
+    </nav>
+    <header
+      style="
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        align-items: stretch;
+        justify-content: space-between;
+      "
+    >
+      <img
+        src="img/logo.png"
+        style="left: 0; width: 6%; margin: 0; margin-left: 1%; min-height: 50px"
+      />
 
-        <nav style="width: 80%;text-align: center; padding: 0;">
-            <div style="border-bottom: 8px solid rgb(41, 197, 93); padding-bottom:20px">
-                <a href='ConfigurarJuego.html'
-                    style="text-align: center; font-size: 200%; margin: 0 auto; padding: 0; color: black">PreguntadOrt</a>
-            </div>
-        </nav>
+      <nav style="width: 80%; text-align: center; padding: 0">
+        <div
+          style="
+            border-bottom: 8px solid rgb(41, 197, 93);
+            padding-bottom: 20px;
+          "
+        >
+          <a
+            href="ConfigurarJuego.html"
+            style="
+              text-align: center;
+              font-size: 200%;
+              margin: 0 auto;
+              padding: 0;
+              color: black;
+            "
+            >PreguntadOrt</a
+          >
+        </div>
+      </nav>
 
-        <div style="right: 0; width: 7.5%; margin: 0;"></div>
+      <div style="right: 0; width: 7.5%; margin: 0"></div>
     </header>
 
-
+    <!-- Comienzo Form -->
     <div class="centrar">
-        <form method="get" action='@Url.Action("Comenzar")'>
-    
-          <div id="formconfig">
-            
-          <div class="configuracion form-floating" id="catgs">
-    
-    
-          <select class="form-select" aria-label="categorias" style="width:6vw" name="categoria">
-    
-            <option value="Programacion" selected>Programacion</option>
-    
-            
-            <option value='Historia'>Historia</option>
-            <option value='Ajedrez'>Ajedrez</option>
-            <option value='Matematica'>Matematica</option>
-            <option value='Literatura'>Literatura</option>
-    
-            
-            <option value=-1>
-              Todas
-            </option>
-          </select>
-          <label for="catgs">Categoría</label>
+      <form id="configform" method="get" action='@Url.Action("Comenzar")'>
+        <div id="formconfig">
+          <!-- Select 1 categorias -->
+
+          <div class="configuracion" id="catgs">
+            <div class="card">
+              <h2 class="card-header">Categoria</h2>
+
+              <div class="card-body">
+                <select
+                  class="form-select"
+                  size="6"
+                  aria-label="categorias"
+                  name="categoria"
+                >
+                  <option value="Programacion" selected>Programacion</option>
+                  <option value="Historia">Historia</option>
+                  <option value="Ajedrez">Ajedrez</option>
+                  <option value="Matematica">Matematica</option>
+                  <option value="Literatura">Literatura</option>
+                  <option value="-1">Todas</option>
+                </select>
+              </div>
+            </div>
           </div>
-    
-          <div class="configuracion form-floating" id="difs">
-    
-    
-            <select class="form-select" aria-label="dificultades" style="width:6vw" name="dificultad">
-              <option value="Facil" selected>Facil</option>
-    
-                <option value='Normal'>Normal</option>
-                <option value='Dificil'>Dificil</option>
-                <option value='Muy dificil'>Muy dificil</option>
-                <option value='Hardcore'>Hardcore</option>
-    
-                <option value=-1 >Todas</option>
-            </select>
-            <label for="difs">Dificultad</label>
+
+          <!-- Select 2 dificultad-->
+          <div class="configuracion" id="difs">
+            <div class="card">
+              <h2 class="card-header">Dificultad</h2>
+
+              <div class="card-body">
+                <select
+                  class="form-select"
+                  size="6"
+                  aria-label="dificultades"
+                  name="dificultad"
+                >
+                  <option value="Facil" selected>Facil</option>
+                  <option value="Normal">Normal</option>
+                  <option value="Dificil">Dificil</option>
+                  <option value="Muy dificil">Muy dificil</option>
+                  <option value="Hardcore">Hardcore</option>
+                  <option value="-1">Todas</option>
+                </select>
+              </div>
+            </div>
           </div>
-          <div class="configuracion form-floating mb-3">
-           
-                <input type="text" class="form-control" id="username" style="width:6vw" name="username" placeholder="usuarioejemplo" required>
-                <label for="username">Username</label>
-    
-              
-        
-          </div>
+
+
         </div>
-        <input type="submit" value="Confirmar" class="btnw btn btn-outline-success" id="btnconfig">
-    
+
+        <!-- Input 3 username -->
+        <div class="configuracion aligncenter">
+          <div class="card">
+            <h2 class="card-header">Usuario</h2>
+            <div class="card-body">
+          <input
+            type="text"
+            class="form-control"
+            id="username"
+            name="username"
+            required
+          />
+        </div>
+        </div>
+        </div>
+
+        <!-- Confirmar -->
+        <input
+          type="submit"
+          value="Confirmar"
+          class="aligncenter btnw btn btn-outline-success"
+          id="btnconfig"
+        />
       </form>
-    
-    </div> 
-    
-     <div class="centrar" style="margin-top: 2vw;">
-     <form action='HighScores.html'>
-        <input type="submit" value="Ver HighScores" class="btnw btn btn-outline-success" id="btnconfig" style="margin-top:0">
-      </form>
-      </div>
+    </div>
 
+    <!-- Ver Highscores -->
+    <div class="centrar" style="margin-top: 2vw">
+      <input
+        type="button"
+        value="Ver HighScores"
+        class="btnw btn btn-outline-success"
+        id="btnconfig"
+        style="margin-top: 0"
+      />
+    </div>
 
-        <footer>
-            &copy; 2023 - preguntadort danosqui20programacion y zareke20programacion y titishebar20programacion
-        </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    </body>
-
+    <footer>
+      &copy; 2023 - preguntadort danosqui20programacion y zareke20programacion y
+      titishebar20programacion
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
