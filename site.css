@@ -1,5 +1,6 @@
 html {
-  font-size: 14px;
+
+  font-size: 1vw;
   position: relative;
   min-height: 100%;
 }
@@ -11,7 +12,7 @@ html {
 }
 
 body {
-  background-image: url(img/fondo.png);
+  background-color: rgb(159, 216, 159);
 }
 
 footer {
@@ -73,7 +74,8 @@ form {
 #formconfig {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content:center;
+  gap: 6vw;
   height: 50%;
 }
 .formconfig {
@@ -83,7 +85,15 @@ form {
 }
 
 .btnw {
-  width: 30%;
+  width: 20%;
+  height: 4vh;
+}
+
+.btn{
+  font-size: 1vw;
+  background-color: rgba(17, 163, 37, 0.308);
+  border-color: rgba(17, 163, 37, 0.308);
+  color: black;
 }
 
 .card-header{
@@ -91,19 +101,31 @@ form {
   border-bottom: 1px solid black;
 }
 
-
+.nomargin{
+  margin: 0%;
+}
 
 .aligncenter {
   align-self: center;
 }
 
-#preguntaycategoria {
+#contenido{
+
   display: flex;
   flex-direction: column;
+  align-items: space-between;
+  gap: 7vh;
+
   width: fit-content;
-  border: 2px solid black;
-  background-color: rgba(137, 43, 226, 0.164);
 }
+
+#preguntaycategoria{
+  font-size: 1vw;
+}
+#contenedorpreguntaycategoria{
+  width: 30%;
+}
+
 #preguntaycategoria h3,
 h2 {
   align-self: center;
@@ -114,6 +136,7 @@ h2 {
 
 #preguntayrtas {
   text-align: center;
+  width: fit-content;
 }
 
 #preguntayrtas form {
@@ -137,10 +160,6 @@ h2 {
   margin-bottom: 20;
 }
 
-#contenedorrtas {
-  margin-bottom: 5vw;
-}
-
 #inforta h1 {
   font-size: 60px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -162,19 +181,7 @@ a {
   color: rgb(117, 34, 24);
 }
 
-.timer-container {
-  position: relative;
-}
 
-.timer {
-  font-size: 3rem;
-  color: green;
-}
-
-.timer.expired {
-  color: red;
-  animation: breathe 2s infinite;
-}
 
 @keyframes breathe {
   0%,

@@ -2,99 +2,126 @@
 <html lang="en">
 
 <head>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index - Preguntadort</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-        <link rel="stylesheet" href="site.css" asp-append-version="true" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="site.css" asp-append-version="true" />
 </head>
 
 <body>
     <nav class="navexterno">
         <ul>
-          <li><a href="Index.html">Index</a></li>
-          <li><a href="ConfigurarJuego.html">ConfigurarJuego</a></li>
-          <li><a href="Juego.html">Juego</a></li>
-          <li><a href="RespuestaCorrecta.html">RespuestaCorrecta</a></li>
-          <li><a href="RespuestaIncorrecta.html">RespuestaIncorrecta</a></li>
-          <li><a href="Fin.html">Fin</a></li>
-          <li><a href="HighScores.html">HighScores</a></li>
+            <li><a href="Index.html">Index</a></li>
+            <li><a href="ConfigurarJuego.html">ConfigurarJuego</a></li>
+            <li><a href="Juego.html">Juego</a></li>
+            <li><a href="RespuestaCorrecta.html">RespuestaCorrecta</a></li>
+            <li><a href="RespuestaIncorrecta.html">RespuestaIncorrecta</a></li>
+            <li><a href="Fin.html">Fin</a></li>
+            <li><a href="HighScores.html">HighScores</a></li>
         </ul>
-      </nav>
-      <header style="display: flex; flex-direction: row; margin: 0; align-items:stretch; justify-content: space-between;">  
-      
+    </nav>
+    <header style="display: flex; flex-direction: row; margin: 0; align-items:stretch; justify-content: space-between;">
+
         <img src="img/logo.png" style="left: 0; width: 6%; margin: 0; margin-left: 1%; min-height: 50px;">
-  
-          <nav style="width: 80%;text-align: center; padding: 0;">
-              <div style="border-bottom: 8px solid rgb(41, 197, 93); padding-bottom:20px">
-                  <a href='ConfigurarJuego.html'
-                      style="text-align: center; font-size: 200%; margin: 0 auto; padding: 0; color: black">PreguntadOrt</a>
-              </div>
-          </nav>
-  
-          <div style="right: 0; width: 7.5%; margin: 0;"></div>
-      </header>
+
+        <nav style="width: 80%;text-align: center; padding: 0;">
+            <div style="border-bottom: 8px solid rgb(41, 197, 93); padding-bottom:20px">
+                <a href='ConfigurarJuego.html'
+                    style="text-align: center; font-size: 200%; margin: 0 auto; padding: 0; color: black">PreguntadOrt</a>
+            </div>
+        </nav>
+
+        <div style="right: 0; width: 7.5%; margin: 0;"></div>
+    </header>
 
 
-    
-<div id="contenedorpreguntaycategoria" class="centrar">
-    <div id="preguntaycategoria" >
 
-        <h2>Pregunta: 4</h2> <br> 
-        <h2>Respuestas correctas: 2</h2> <br> 
-        <h3>Categoria: Historia</h3>
-        <div id="timer">
-            <div id="countdown"></div>
-        </div>
-    </div>
-</div>
 
-<div class="centrar">
-<div id="preguntayrtas">
-    <h1>¿Cuando fue la revolucion francesa?</h1>
-    <form action='RespuestaCorrecta.html' method="post">
-    <div class="centrar" id="contenedorrtas" >
-        <div id="rtas"style="width: 60vw">
-            <div class="mitadrtas">
-                <div class=centrar>
-                <div class="rta"> <input class="btn-check" id="op1" type=radio value="1" name="idRespuesta" checked> <label class="btn btn-outline-info" for="op1">2001</label></div>
-                </div>
-                 <div class=centrar>
-                <div class="rta"> <input class="btn-check" id="op2" type=radio value="2" name="idRespuesta"> <label class="btn btn-outline-info" for="op2">1989</label></div>
-                </div>            
+
+    <div class="centrar nomargin">
+        <div id="contenido" class="centrar nomargin">
+
+            <div class="progress" role="progressbar" aria-label="barraprogreso" aria-valuenow="25" aria-valuemin="0"
+                aria-valuemax="100" style="width: 100%;">
+                <div class="progress-bar bg-warning" style="width: 25%"></div>
             </div>
 
-            <div class="mitadrtas">
-                <div class=centrar>
-                <div class="rta"> <input class="btn-check" id="op3" type=radio value="3" name="idRespuesta"> <label class="btn btn-outline-info" for="op3">1789</label></div>
-                </div>
-                <div class=centrar>
-                <div class="rta"> <input class="btn-check" id="op4" type=radio value="4" name="idRespuesta"> <label class="btn btn-outline-info" for="op4">1429</label></div>
+
+            <div id="contenedorpreguntaycategoria">
+                <div class="card" id="preguntaycategoria">
+                    <ul class="list-group">
+                        <li class="list-group-item" id="numpreg">Pregunta: 4</h2> <br>
+                        <li class="list-group-item">Categoria:Historia</h2> <br>
+                    </ul>
                 </div>
             </div>
+
+
+
+                <h1>¿Qué es un "callback" en el contexto de la programación?</h1>
+                <form action='RespuestaCorrecta.html' method="post">
+                    <div class="centrar nomargin" id="contenedorrtas">
+                        <div id="rtas" style="width: 60vw">
+                            <div class="mitadrtas">
+                                <div class="centrar nomargin">
+                                    <div class="rta"> <input class="btn-check" id="op1" type=radio value="1"
+                                            name="idRespuesta" checked> <label class="btn btn-outline-info"
+                                            for="op1">Una función que se ejecuta después de que se haya completado una
+                                            operación asíncrona.</label></div>
+                                </div>
+                                <div class="centrar nomargin">
+                                    <div class="rta"> <input class="btn-check" id="op2" type=radio value="2"
+                                            name="idRespuesta"> <label class="btn btn-outline-info" for="op2">Un bucle
+                                            que se repite indefinidamente.</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mitadrtas">
+                                <div class="centrar nomargin">
+                                    <div class="rta"> <input class="btn-check" id="op3" type=radio value="3"
+                                            name="idRespuesta"> <label class="btn btn-outline-info" for="op3">Un error
+                                            que se produce durante la compilación del código.</label>
+                                    </div>
+                                </div>
+                                <div class="centrar nomargin">
+                                    <div class="rta"> <input class="btn-check" id="op4" type=radio value="4"
+                                            name="idRespuesta"> <label class="btn btn-outline-info" for="op4">Una
+                                            variable que solo se puede modificar una vez.</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <input type="submit" class="btn btn-outline-success btnw" value="Confirmar">
+                </form>
+   
         </div>
     </div>
 
-    <input type="submit" class="btn btn-outline-success btnw" value="Confirmar">
-    </form>
-</div>
-</div>
 
-</div>
-<div id="info" style="position:absolute;top:0;margin-top:9vw">
-    <div class="card" style="width: 18rem;">
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">46 Puntos</li>
-    <li class="list-group-item">zareke20programacion</li>
-  </ul>
-</div>
+
+    </div>
+    <div id="info" style="position:absolute;top:0;margin-top:9vw">
+        <div class="card" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">46 Puntos</li>
+                <li class="list-group-item">Usuario: Zareke20programacion</li>
+                <li class="list-group-item">Preguntas correctas: 5</li>
+            </ul>
+        </div>
 
 
         <footer>
             &copy; 2023 - preguntadort danosqui20programacion y zareke20programacion y titishebar20programacion
         </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    </body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"></script>
+</body>
 
 </html>
