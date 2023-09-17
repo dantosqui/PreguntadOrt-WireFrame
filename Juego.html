@@ -28,7 +28,7 @@
         <img src="img/logo.png" style="left: 0; width: 6%; margin: 0; margin-left: 1%; min-height: 50px;">
 
         <nav style="width: 80%;text-align: center; padding: 0;">
-            <div style="border-bottom: 8px solid rgb(41, 197, 93); padding-bottom:20px">
+            <div style="border-bottom: 16px solid rgb(41, 197, 93); padding-bottom:20px">
                 <a href='ConfigurarJuego.html'
                     style="text-align: center; font-size: 200%; margin: 0 auto; padding: 0; color: black">PreguntadOrt</a>
             </div>
@@ -40,16 +40,16 @@
 
 
 
-
-    <div class="centrar nomargin">
+<!-- Inicio todo el contenido -->
+    <div class="centrar" id="contenedorcontenido">
         <div id="contenido" class="centrar nomargin">
-
+            <!-- Barra de progreso -->
             <div class="progress" role="progressbar" aria-label="barraprogreso" aria-valuenow="25" aria-valuemin="0"
                 aria-valuemax="100" style="width: 100%;">
                 <div class="progress-bar bg-warning" style="width: 25%"></div>
             </div>
 
-
+<!-- Info pregunta -->
             <div id="contenedorpreguntaycategoria">
                 <div class="card" id="preguntaycategoria">
                     <ul class="list-group">
@@ -60,51 +60,53 @@
             </div>
 
 
+<!-- Pregunta -->
+            <h1>¿Qué es un "callback" en el contexto de la programación?</h1>
+            <!-- Inicio respuestas -->
+            <form action='RespuestaCorrecta.html' method="post" id="formrtas">
+                <div class="centrar nomargin" >
+                    <div id="rtas" style="width: 60vw">
 
-                <h1>¿Qué es un "callback" en el contexto de la programación?</h1>
-                <form action='RespuestaCorrecta.html' method="post">
-                    <div class="centrar nomargin" id="contenedorrtas">
-                        <div id="rtas" style="width: 60vw">
-                            <div class="mitadrtas">
-                                <div class="centrar nomargin">
-                                    <div class="rta"> <input class="btn-check" id="op1" type=radio value="1"
-                                            name="idRespuesta" checked> <label class="btn btn-outline-info"
-                                            for="op1">Una función que se ejecuta después de que se haya completado una
-                                            operación asíncrona.</label></div>
-                                </div>
-                                <div class="centrar nomargin">
-                                    <div class="rta"> <input class="btn-check" id="op2" type=radio value="2"
-                                            name="idRespuesta"> <label class="btn btn-outline-info" for="op2">Un bucle
-                                            que se repite indefinidamente.</label>
-                                    </div>
+                        <div class="mitadrtas">
+                            <div class="centrar nomargin contenedorrtas">
+                                <div class="rta"> <input class="btn-check" id="op1" type=radio value="1"
+                                        name="idRespuesta" checked> <label class="btn btn-outline-primary" for="op1">Una
+                                        función que se ejecuta después de que se haya completado una
+                                        operación asíncrona.</label></div>
+                            </div>
+                            <div class="centrar nomargin contenedorrtas">
+                                <div class="rta"> <input class="btn-check" id="op2" type=radio value="2"
+                                        name="idRespuesta"> <label class="btn btn-outline-primary" for="op2">Un bucle
+                                        que se repite indefinidamente.</label>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="mitadrtas">
-                                <div class="centrar nomargin">
-                                    <div class="rta"> <input class="btn-check" id="op3" type=radio value="3"
-                                            name="idRespuesta"> <label class="btn btn-outline-info" for="op3">Un error
-                                            que se produce durante la compilación del código.</label>
-                                    </div>
+                        <div class="mitadrtas">
+                            <div class="centrar nomargin contenedorrtas">
+                                <div class="rta"> <input class="btn-check" id="op3" type=radio value="3"
+                                        name="idRespuesta"> <label class="btn btn-outline-primary" for="op3">Un error
+                                        que se produce durante la compilación del código.</label>
                                 </div>
-                                <div class="centrar nomargin">
-                                    <div class="rta"> <input class="btn-check" id="op4" type=radio value="4"
-                                            name="idRespuesta"> <label class="btn btn-outline-info" for="op4">Una
-                                            variable que solo se puede modificar una vez.</label>
-                                    </div>
+                            </div>
+                            <div class="centrar nomargin contenedorrtas">
+                                <div class="rta"> <input class="btn-check" id="op4" type=radio value="4"
+                                        name="idRespuesta"> <label class="btn btn-outline-primary" for="op4">Una
+                                        variable que solo se puede modificar una vez.</label>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+<!-- Boton confirmar -->
+                <input type="submit" class="btn btn-outline-success btnw" value="Confirmar">
+            </form>
 
-                    <input type="submit" class="btn btn-outline-success btnw" value="Confirmar">
-                </form>
-   
         </div>
     </div>
 
 
-
+<!-- Info usuario -->
     </div>
     <div id="info" style="position:absolute;top:0;margin-top:9vw">
         <div class="card" style="width: 18rem;">
