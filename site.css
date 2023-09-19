@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  background-color: rgb(159, 216, 159);
+  background-color: rgb(180, 240, 180);
 }
 
 header{
@@ -48,10 +48,14 @@ footer {
   width: 100%;
 }
 
+#botonesabajo{
+  gap: 4vw;
+}
+
 .configuracion {
-  flex-shrink: 1;
+
   height: fit-content;
-  width: 10%;
+  width: 14%;
 }
 select{
   scrollbar-width: thin;
@@ -65,12 +69,15 @@ option{
 input[type=text]{
   font-size: 1vw;
 }
+#titulopag{
+  font-size: 2.4vw;
+}
 form {
   width: 100%;
 }
 #configform {
   height: 100%;
-  gap: 7vw;
+  gap: 3vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -80,7 +87,7 @@ form {
   display: flex;
   flex-direction: row;
   justify-content:center;
-  gap: 6vw;
+  gap: 10vw;
   height: 50%;
 }
 .formconfig {
@@ -93,13 +100,17 @@ form {
   width: 20vw;
   height: 6vh;
 }
-
+.rta .btn{
+  background-color: rgba(37, 231, 124, 0.199);
+  border-color: rgba(14, 209, 102, 0.308);
+}
 .btn{
   font-size: 1vw;
   background-color: rgba(17, 163, 37, 0.308);
   border-color: rgba(17, 163, 37, 0.308);
   color: black;
 }
+
 
 .card-header{
   background-color: white;
@@ -108,6 +119,13 @@ form {
 
 .nomargin{
   margin: 0%;
+}
+#infoybarra{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7vh;
 }
 
 .aligncenter {
@@ -171,6 +189,10 @@ h2 {
   flex-direction: row;
   gap: 3vw;
   margin-bottom: 20;
+}
+
+#pregunta{
+  font-size: 2.2vw;
 }
 
 .rta label{
