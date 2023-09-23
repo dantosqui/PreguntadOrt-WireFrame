@@ -13,14 +13,25 @@ html {
 }
 
 body {
-  background-image: linear-gradient(rgb(255,255,255),rgb(210, 226, 211));
+  background-image: linear-gradient(rgb(255,255,255),rgb(221, 230, 221));
 }
 
 header{
   font-size: 1.1vw;
 }
-
-
+.btn-outline-primary {
+	--bs-btn-color: #318f4d;
+	--bs-btn-border-color: #30793a;
+}
+.btn-check:checked + .btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check) + .btn:active {
+	color: var(--bs-btn-active-color);
+	background-color: #328539;
+	border-color: #328539;
+}
+.rta .btn{
+  background-color: rgba(37, 231, 124, 0.199);
+  border-color: rgba(14, 209, 102, 0.308);
+}
 
 footer {
   position: fixed;
@@ -231,7 +242,7 @@ a {
 }
 
 #correcto h1 {
-  color: rgb(6, 78, 6);
+  color: rgb(32, 124, 32);
 }
 #incorrecto h1 {
   color: rgb(211, 70, 55);

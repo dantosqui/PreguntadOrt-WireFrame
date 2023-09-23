@@ -23,7 +23,6 @@
         <li><a href="RespuestaCorrecta.html">RespuestaCorrecta</a></li>
         <li><a href="RespuestaIncorrecta.html">RespuestaIncorrecta</a></li>
         <li><a href="Fin.html">Fin</a></li>
-        <li><a href="HighScores.html">HighScores</a></li>
       </ul>
     </nav>
     <header
@@ -67,7 +66,7 @@
 
     <!-- Comienzo Form -->
     <div class="centrar">
-      <form id="configform" method="get" action='@Url.Action("Comenzar")'>
+      <form id="configform" method="get" onsubmit="return false">
         <h1 id="titulopag">Configuración del juego</h1>
         <div id="formconfig">
           <!-- Select 1 categorias -->
@@ -139,7 +138,10 @@
 
 
       </div>
-      
+    </form>
+  </div>
+  <div class="centrar">
+      <a href="Juego.html">
         <!-- Confirmar -->
         <input
           type="submit"
@@ -147,9 +149,9 @@
           class="aligncenter btnw btn btn-outline-success"
           id="btnconfig"
         />
-        
-      </form>
+      </a>
     </div>
+   
 
 
 
