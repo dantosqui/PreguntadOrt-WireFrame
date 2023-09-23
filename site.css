@@ -171,6 +171,18 @@ form {
   width: 30%;
 }
 
+.offcanvas-header{
+  background-color: rgb(237, 253, 227);
+}
+.offcanvas-body .accordion-item, .accordion-button{
+  scrollbar-width: thin;
+  background-color: rgb(198, 228, 195);
+}
+
+.accordion-button:focus{
+  background-color: #88dfbd;
+  outline:none
+}
 #preguntaycategoria h3,
 h2 {
   align-self: center;
