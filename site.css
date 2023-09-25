@@ -1,3 +1,6 @@
+
+
+
 html {
 
   font-size: 1vw;
@@ -20,17 +23,13 @@ header{
   font-size: 1.1vw;
 }
 .btn-outline-primary {
-	--bs-btn-color: #318f4d;
-	--bs-btn-border-color: #30793a;
+	--bs-btn-color: #328539;
+	--bs-btn-border-color: #328539;
 }
 .btn-check:checked + .btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check) + .btn:active {
 	color: var(--bs-btn-active-color);
 	background-color: #328539;
 	border-color: #328539;
-}
-.rta .btn{
-  background-color: rgba(37, 231, 124, 0.199);
-  border-color: rgba(14, 209, 102, 0.308);
 }
 
 footer {
@@ -82,8 +81,8 @@ option{
 input[type=text]{
   font-size: 1vw;
 }
-#titulopag{
-  font-size: 2.4vw;
+.titulopag{
+  font-size: 2.3vw;
 }
 form {
   width: 100%;
@@ -113,21 +112,26 @@ form {
   width: 20vw;
   height: 6vh;
 }
-.rta .btn{
-  background-color: rgba(37, 231, 124, 0.199);
-  border-color: rgba(14, 209, 102, 0.308);
-}
+
 .btn{
   font-size: 1vw;
-  background-color: rgba(17, 163, 37, 0.308);
-  border-color: rgba(17, 163, 37, 0.308);
+  background-color: #A8D8AE;
+  border-color: #A8D8AE;
   color: black;
 }
 
-
+.card, .card-header, .list-group-item{
+  background-color: #d3a0c2;
+}
+.list-group-item{
+  border-color: #880b5c;
+}
 .card-header{
-  background-color: white;
-  border-bottom: 1px solid black;
+  border-bottom:1px solid #880b5c;
+}
+
+.progressbarbg{
+  background-color: #815272;
 }
 
 .nomargin{
@@ -145,6 +149,12 @@ form {
   align-self: center;
 }
 
+#contenidofin{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
 #contenido{
 
   display: flex;
@@ -171,18 +181,23 @@ form {
   width: 30%;
 }
 
-.offcanvas-header{
-  background-color: rgb(237, 253, 227);
+.offcanvas-header, .offcanvas-body{
+  background-color: #fde8ff;
 }
 .offcanvas-body .accordion-item, .accordion-button{
   scrollbar-width: thin;
-  background-color: rgb(198, 228, 195);
+  background-color: #d3a0c2;
 }
 
 .accordion-button:focus{
-  background-color: #88dfbd;
-  outline:none
+  background-color:  #856078;
+  color: black;
 }
+
+.accordion-button:not(.collapsed){
+  background-color: #856078;
+}
+
 #preguntaycategoria h3,
 h2 {
   align-self: center;
@@ -198,6 +213,10 @@ h2 {
 
 #preguntayrtas form {
   height: 40%;
+}
+
+#rtacorrectacontenedor{
+  width: 40vw;
 }
 
 #rtas {
@@ -216,9 +235,7 @@ h2 {
   margin-bottom: 20;
 }
 
-#pregunta{
-  font-size: 2.2vw;
-}
+
 
 .rta label{
   width: 100%;
@@ -233,6 +250,10 @@ h2 {
 
 .btnrta:hover{
   background-color: rgb(0, 0, 0);
+}
+
+.btn:hover{
+  background-color: #23611d;
 }
 
 .contenedorrtas{
@@ -254,10 +275,10 @@ a {
 }
 
 #correcto h1 {
-  color: rgb(32, 124, 32);
+  color: #034b03;
 }
 #incorrecto h1 {
-  color: rgb(211, 70, 55);
+  color: #4b0303;
 }
 
 #highscores{
